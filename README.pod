@@ -20,10 +20,10 @@ SIIT-DC Edge Relay, you will probably want to manually configure the settings
 I<clat-v4-addr>, I<clat-v6-addr>, and I<plat-prefix> to mirror the SIIT-DC
 Border Relay's configuration.
 
-It relies either on the software package TAYGA by Nathan Lutchansky or on the
+It relies either on the software package TAYGA by Andrew Palardy or on the
 kernel module nat46 by Andrew Yourtchenko for the actual translation of packets
-between IPv4 and IPv6 (I<RFC 6145>) TAYGA may be downloaded from its home page
-at L<http://www.litech.org/tayga/>, nat46 from its repository at
+between IPv4 and IPv6 (I<RFC 6145>) TAYGA may be downloaded from its repository
+at L<https://github.com/apalrd/tayga>, nat46 from its repository at
 L<https://github.com/ayourtch/nat46>.
 
 =head1 SYNOPSIS
@@ -275,7 +275,7 @@ L<https://nftables.org/projects/nftables/>. Required if I<ctmark> is set.
 =item B<cmd-tayga=path> (default: assume in $PATH)
 
 Path to the B<tayga> binary from the TAYGA package available at
-L<http://www.litech.org/tayga>. Required.
+L<https://github.com/apalrd/tayga>. Required.
 
 =item B<cmd-ufw=path> (default: assume in $PATH)
 
